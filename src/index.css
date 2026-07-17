@@ -1,0 +1,81 @@
+/* Reset e box-sizing (padrão Creare) */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: inherit;
+}
+
+/* Variáveis do design system */
+:root {
+  --font-montserrat: "Montserrat", "Roboto", "Helvetica", "Arial", sans-serif;
+  --font-noto-sans: "Noto Sans", "Roboto", "Helvetica", "Arial", sans-serif;
+  --font-size-base: 17px;
+  --sidebar-expanded-width: 15rem;
+  --box-shadow: 0.05rem 0.05rem 0.1rem rgba(0, 0, 0, 0.1), 0.05rem 0.05rem 0.5rem rgba(0, 0, 0, 0.05);
+  --color-primary: #169EFF;
+  --color-highlight: #169EFF;
+  --color-sidebar: #E9EEEE;
+  --color-nav-flyout-bg: #F2F2F2;
+  --color-arrow: #8c8f8f;
+  --color-header: #F6FBFB;
+  --color-separator: #C3C7C7;
+  --color-menu-highlight: #b9bcbc;
+  --color-menu-active: #d7dcdc;
+  --color-subdued: #2F2F2F1A;
+  --color-outline: #2F2F2F33;
+  --color-outline-hover: #2F2F2F55;
+  --color-outline-focus: #20ACAC;
+  --color-background: #FFFFFF;
+  --color-paper: #f3f3f3;
+  --color-tooltip-background: #FFFFFF;
+  --color-text-primary: #2F2F2F;
+  --color-text-secondary: #2F2F2F80;
+  --color-text-disabled: #2F2F2F40;
+  --color-error-bg: #EF535066;
+  --color-error: #D32F2F;
+  --color-warning-bg: #FECB7A66;
+  --color-warning: #E29C2C;
+  --color-info-bg: #42A5F566;
+  --color-info: #2196F3;
+  --color-success-bg: #66BB6A66;
+  --color-success: #D32F2F;
+  --color-action-hover: #169EFF;
+  --color-action-selected: #169EFF80;
+  --color-header-title: #20ACAC;
+  --font-size-header-title: 0.906rem;
+  --z-app-content: 1;
+  --z-modal-fullscreen: 10;
+  --z-sidebar: 100;
+  --z-nav-flyout: 110;
+  --z-modal-system-fullscreen: 10000;
+}
+
+html {
+  font-size: var(--font-size-base);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  display: flex;
+  margin: 0;
+  font-family: var(--font-montserrat);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
+  color: var(--color-text-primary);
+  background-color: var(--color-background);
+  padding: 1rem;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+}
