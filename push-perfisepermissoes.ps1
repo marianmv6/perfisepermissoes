@@ -14,7 +14,7 @@ if ($LASTEXITCODE -ne 0) {
 $remote = git remote get-url origin 2>$null
 if ($LASTEXITCODE -ne 0) {
   Write-Host "Remote 'origin' nao configurado. Exemplo:" -ForegroundColor Yellow
-  Write-Host "  git remote add origin https://github.com/SEU_USUARIO/perfisepermissoes.git" -ForegroundColor Yellow
+  Write-Host "  git remote add origin https://github.com/marianmv6/perfisepermissoes.git" -ForegroundColor Yellow
   exit 1
 }
 

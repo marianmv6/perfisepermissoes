@@ -25,7 +25,7 @@ No GitHub: **New repository** → nome sugerido: `perfisepermissoes` → criar s
 Conectar e enviar:
 
 ```powershell
-git remote add origin https://github.com/SEU_USUARIO/perfisepermissoes.git
+git remote add origin https://github.com/marianmv6/perfisepermissoes.git
 git branch -M main
 git push -u origin main
 ```
